@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-	<title>zadanie 4 - test</title>
+	<title>Quiz</title>
 	
 </head>
 <body>
@@ -21,16 +21,80 @@ console.log(odpa,odpb,odpc);
 	document.getElementById("wynik").innerHTML = "<br>" + odp;
 }
 
+
+</script>
+<script>
+function spr1(){
+
+
+var A = document.getElementById("A").checked;
+var B = document.getElementById("B").checked;
+var C = document.getElementById("C").checked;
+
+
+console.log(A,B,C);
+ if  (B == true) odp = "dobrze";
+	else odp = ".źle";
+	document.getElementById("wynik1").innerHTML = "<br>" + odp;
+}
+
+
 </script>
 
+<script>
+function spr4(){
+
+
+var A4 = document.getElementById("A4").checked;
+var B4 = document.getElementById("B4").checked;
+var C4 = document.getElementById("C4").checked;
+
+
+console.log(A4,B4,C4);
+ if  (A4 == true) odp = "dobrze";
+	else odp = ".źle";
+	document.getElementById("wynik4").innerHTML = "<br>" + odp;
+}
+
+
+</script>
 <div id="test">
-<h3>ile to jest 2*2+2?</hr>
-	<input type="radio" name="wybory" value="A" id="A" id="odpa"> 10<br>
-	<input type="radio" name="wybory" value="A" id="B" id="odpb"> 10<br>
-	<input type="radio" name="wybory" value="A" id="C" id="odpc"> 10<br>
+<h3>ile to jest 2*2+2?</hr> <br>
+	<input type="radio" name="wybory" value="A" id="odpa"> 4<br>
+	<input type="radio" name="wybory" value="B" id="odpb"> 8<br>
+	<input type="radio" name="wybory" value="C" id="odpc"> 6<br>
 <br>
 <button onclick="spr()">Sprawdź</button>
+<div id="wynik"></div>
 </div>
+
+
+<br>
+
+<div id="zadanie 2">
+
+<h3>kim był pitagoras?</hr> <br>
+	<input type="radio" name="wybory" value="B" id="A"> średniowiecznym Magnatem<br>
+	<input type="radio" name="wybory" value="C" id="B"> Matematykiem<br>
+	<input type="radio" name="wybory" value="A" id="C"> Biologiem<br>
+<br>
+<button onclick="spr1()">Sprawdź</button>
+<div id="wynik1"></div>
+</div>
+
+
+
+<div id="zadanie 4">
+
+<h3>czy 6*6 to jest to samo co 3*3*4?</hr> <br>
+	<input type="radio" name="wybory" value="B4" id="A4"> tak<br>
+	<input type="radio" name="wybory" value="C4" id="B4"> nie<br>
+	<input type="radio" name="wybory" value="A4" id="C4"> nie wiem<br>
+<br>
+<button onclick="spr4()">Sprawdź</button>
+<div id="wynik4"></div>
+</div>
+
 
 </body>
 
